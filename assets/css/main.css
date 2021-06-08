@@ -1,14 +1,22 @@
 
+body {
+    background-color: transparent;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
 
 .container {
     width: 500px;
 }
 
+.debug {
+    /* border: 1px solid red; */
+}
 
 .center {
     margin: auto;
     width: 50%;
-    border: 1px solid black;
     padding: 10px;
     margin-top: 30px;
   } 
@@ -19,7 +27,29 @@
 
   
 .zoom:hover {
-transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+/* Theme List */
+.dark  {
+    color: white;
+    background-color: black;
+}
+.dragos {
+    color:#d2fafb;
+    background-color: #2c003e;
+}
 
+.ocean {
+    color: #1b262c;
+    background-color:#bbe1fa;
+
+}
+
+.link {
+    color:black;
+}
+
+.link-white {
+    color:white;
+}

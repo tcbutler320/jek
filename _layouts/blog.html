@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/borland.css">
   <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
   <script src="/assets/js/themeToggle.js"></script>
-
   <title>Jekyll Evermay</title>
 </head>
 <body>
@@ -24,11 +22,13 @@
   <div class="center">
     <div>
       <h2>
-        <a href="/">home</a> / blog / {{page.title}}
+        <p>home / blog /</p>
       </h2>
-      <p>by: {{page.author}}, {{page.date | date: '%b %Y'}}</p>
     <div>
-    {{ content }}
+    {% for post in site.posts%}
+      <p><a href="{{post.url}}">{{post.title}}<a></p>
+      <p><small>~ {{post.author}},  {{post.date | date: '%b %Y'}}</small></p>
+    {% endfor %}
   </div>
 </body>
 </html>
