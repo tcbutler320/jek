@@ -1,0 +1,25 @@
+
+
+.container {
+    width: 500px;
+}
+
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 30px;
+  } 
+
+.nav {
+    margin-right: 100px;
+}
+
+  
+.zoom:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
