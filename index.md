@@ -55,7 +55,8 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 
 ### 💾 local storage 
 
-When saving a theme with <i class="fas fa-palette zoom"></i>, jek will add a new value to local storage. Each time you go back to the site, jek will look first at local storage and load that theme. If you clear your cache or change browsers you'll have to save again.
+When saving a theme with <i class="fas fa-user-astronaut fa-lg zoom"></i>
+, jek will add a new value to local storage. Each time you go back to the site, jek will look first at local storage and load that theme. If you clear your cache or change browsers you'll have to save again.
 
 ![](/assets/img/readme/storage.png)
 
