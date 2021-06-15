@@ -14,11 +14,11 @@ layout: home
 
 jek is a minimalist jekyll theme putting the power of custom color schemes in the user's hands. toggle between schemes hassle-free, or create new one's in just 2 steps.
 
-*like the ascii art? make your's at [patorjk](https://patorjk.com/software/taag) or [fsymbols](https://fsymbols.com/text-art/)*
+*like the ascii art? make it at [fsymbols](https://fsymbols.com/text-art/)*
 ### ⚡ features
 
-+  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom" onclick="darkMode();"></i>
-+  [x] change entire theme by clicking  <i class="fas fa-palette zoom" onclick="changeTheme();"></i>
++  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom"></i>
++  [x] change entire theme by clicking  <i class="fas fa-palette zoom"></i>
 +  [x] add a new color scheme in 2 simple steps
 
 ### 👩‍🚀 add new themes
@@ -43,15 +43,21 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 
 *dark*  
 
-![](preview-dark.png)
+![](/assets/img/readme/preview-dark.png)
 
 *sunset*   
 
-![](preview-sunset.png)
+![](/assets/img/readme/preview-sunset.png)
 
 *dragos*  
 
-![](preview-dragos.png)
+![](/assets/img/readme/preview-dragos.png)  
+
+### 💾 local storage 
+
+When saving a theme with <i class="fas fa-palette zoom"></i>, jek will add a new value to local storage. Each time you go back to the site, jek will look first at local storage and load that theme. If you clear your cache or change browsers you'll have to save again.
+
+![](/assets/img/readme/storage.png)
 
 
 
