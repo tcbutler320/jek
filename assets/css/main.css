@@ -14,20 +14,53 @@ a {
     width: 500px;
 }
 
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+    /* body {
+        background-color: red;
+    } */
+
+    .center {
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+      } 
+
+
+      .nav {
+        margin-right: 10px;
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 768px) {
+    /* body {
+        background-color: blue;
+    } */
+
+    .center {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        margin-top: 20px;
+    } 
+
+    .nav {
+        margin-right: 100px;
+    }
+    
+
+}
+
+
 .debug {
     /* border: 1px solid red; */
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    margin-top: 30px;
-  } 
-
-.nav {
-    margin-right: 100px;
-}
 
   
 .zoom:hover {
@@ -35,6 +68,10 @@ a {
 }
 
 /* Theme List */
+.light{
+    color: black;
+    background-color: white;
+}
 .dark  {
     color: white;
     background-color: black;

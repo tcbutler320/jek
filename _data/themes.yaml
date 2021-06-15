@@ -1,3 +1,7 @@
+
+- name: light
+  enabled: true
+  
 - name: dark
   enabled: true
 

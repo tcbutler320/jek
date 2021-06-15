@@ -6,9 +6,11 @@
   <div class="center">
     <div>
       <p style="font-size: 20px;">
-        <a href="/">home</a> / blog / {{page.title}}
+        <a href="/">home</a> / <a href="/blog">blog</a> / {{page.title}}
       </p>
-      <p>by: {{page.author}}, {{page.date | date: '%b %Y'}}</p>
+      <p>
+        <i>{{page.date | date: '%B %d %Y'}}</i>, {{page.author}}
+      </p>
     <div>
     {{ content }}
   </div>

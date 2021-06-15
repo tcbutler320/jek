@@ -3,7 +3,7 @@ layout: post
 title:  "jek style guide"
 date:   2021-06-08 09:34:43 -0400
 categories: jekyll update
-author: tyler butler
+author: Tyler
 ---  
 
 ```text

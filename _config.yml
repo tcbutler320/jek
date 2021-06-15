@@ -33,6 +33,10 @@ github_username:  jek
 
 edit-date: false # show the date of last edit on pages
 
+# development settings 
+
+developer-controls: false # show developer specefic tips
+
 # Build settings
 theme: 
 plugins:

@@ -2,7 +2,6 @@
 layout: home
 ---
 
-
 ```text
 ░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░
 ░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░
@@ -10,14 +9,14 @@ layout: home
 ░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░
 ░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░
 ░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░
-░░░░░░░░░░░░░░by Tyler Butler░░░░░
-```
+░░░░░░░░░░░░░ by Tyler Butler ░░░░
+```  
 
 jek is a minimalist jekyll theme putting the power of custom color schemes in the user's hands. toggle between schemes hassle-free, or create new one's in just 2 steps.
 
 ### ⚡ features
 
-+  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom" onclick="changeTheme('dark');"></i>
++  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom" onclick="darkMode();"></i>
 +  [x] change entire theme by clicking  <i class="fas fa-palette zoom" onclick="changeTheme();"></i>
 +  [x] add a new color scheme in 2 simple steps
 
@@ -38,6 +37,9 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 - name: mytheme
   enabled: true
 ```
+
+
+
 
 
 
