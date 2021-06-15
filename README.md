@@ -42,12 +42,17 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 
 *dark*  
 
-![](preview-dark.png)
+![](/assets/img/readme/preview-dark.png)
 
 *sunset*   
 
-![](preview-sunset.png)
+![](/assets/img/readme/preview-sunset.png)
 
 *dragos*  
 
-![](preview-dragos.png)
+![](/assets/img/readme/preview-dragos.png). 
+
+
+#### 💾 local storage  
+
+When saving a theme with , jek will add a new value to local storage. Each time you go back to the site, jek will look first at local storage and load that theme. If you clear your cache or change browsers you’ll have to save again.
