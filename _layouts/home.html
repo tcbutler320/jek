@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
-  <script src="/assets/js/themeToggle.js"></script>
-  <script src="/assets/js/toolTip.js"></script>
-  <title>jek</title>
-</head>
+{% include head.html %}
 <body>
-  <div class="nav">
-    <p style="text-align: right;">
-      <i class="fas fa-palette fa-lg zoom tooltip" onclick="changeTheme();"></i>
-      <i class="fas fa-user-astronaut fa-lg zoom"></i>
-      <i class="fas fa-sign-in-alt fa-lg zoom"></i>
-      <p style="text-align: right;">
-          theme: <span id="theme-selection">plain</span>
-      </p>
-    </p>
-  </div>
+  {% include controls.html %}
   <div class="center debug">
     <div>
-      <h2>
+      <p style="font-size: 20px;">
         home / <a href="/blog">blog</a>
-      </h2>
+      </p>
     <div>
     {{ content }}
+    
   </div>
+  {% if site.edit-date %}
     <p style="text-align: right;">
-        <i class="fas fa-code-branch"></i> 1.0.0
+      <small>last edited</small>
     </p>
+  {% endif %}
 </body>
 </html>

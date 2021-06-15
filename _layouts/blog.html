@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
-  <script src="/assets/js/themeToggle.js"></script>
-  <title>Jekyll Evermay</title>
-</head>
+{% include head.html %}
 <body>
-  <div class="nav">
-  <p style="text-align: right;">
-    <i class="fas fa-palette zoom tooltip" onclick="changeTheme();"></i>
-    <i class="fas fa-user-astronaut zoom"></i>
-    <i class="fas fa-sign-in-alt zoom"></i>
-  </p>
-  <p style="text-align: right;">
-    <small>theme: <span id="theme-selection">plain</span></small>
-  </p>
-  </div>
+  {% include controls.html %}
   <div class="center">
     <div>
-      <h2>
-        <p>home / blog /</p>
-      </h2>
+      <p style="font-size: 20px;">home / blog /</p>
     <div>
     {% for post in site.posts%}
-      <p><a href="{{post.url}}">{{post.title}}<a></p>
-      <p><small>~ {{post.author}},  {{post.date | date: '%b %Y'}}</small></p>
+      <p>{{post.date|date:'%b %Y'}} ~ <a href="{{post.url}}">{{post.title}}</a></p>
     {% endfor %}
   </div>
 </body>
