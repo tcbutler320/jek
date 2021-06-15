@@ -34,3 +34,5 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 - name: mytheme
   enabled: true
 ```
+
+![](jek.gif)
