@@ -29,10 +29,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jek
 github_username:  jek
 
+# Theme settings 
+
+edit-date: false # show the date of last edit on pages
+
 # Build settings
 theme: 
 plugins:
   - jekyll-feed
+
+
 
 
 
@@ -43,3 +49,4 @@ kramdown:
   syntax_highlighter_opts:
     default_lang: html
     css_class : 'syntax'
+

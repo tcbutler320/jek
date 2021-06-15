@@ -1,0 +1,11 @@
+- name: dark
+  enabled: true
+
+- name: dragos
+  enabled: true
+
+- name: ocean
+  enabled: true
+
+- name: sunset
+  enabled: true

@@ -1,0 +1,38 @@
+<div class="nav">
+    <p style="text-align: right;">
+      <i class="far fa-moon fa-lg zoom" onclick="changeTheme('dark');"></i>
+      <i class="fas fa-palette fa-lg zoom" onclick="changeTheme();"></i>
+      <i class="fas fa-user-astronaut fa-lg zoom"></i>
+      <i class="fas fa-sign-in-alt fa-lg zoom"></i>
+      <p style="text-align: right;">
+        <small>
+            developer dashboard
+            <br>
+            <label for="theme">theme:</label>
+            <select name="theme" id="theme">
+              <option value="dark">dark</option>
+              <option value="sunset">sunset</option>
+              <option value="ocean">ocean</option>
+              <option value="dragos">dragos</option>
+            </select>
+            <br>
+            input: <span id="input-selection">n/a</span>
+        </small>
+      </p>
+    </p>
+  </div>
+
+
+<script>
+var themes = ["dark"];
+</script>
+
+{% for theme in site.data.themes %}
+  {% if theme.enabled %}
+    <script>
+      themes.push("{{theme.name}}");
+      console.log('added ' + '{{theme.name}}' + ' to themes');
+    </script>
+  {% endif %}
+{% endfor %}
+

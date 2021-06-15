@@ -6,6 +6,10 @@ body {
 }
 
 
+a {
+    color: hotpink;
+  }
+
 .container {
     width: 500px;
 }
@@ -46,10 +50,12 @@ body {
 
 }
 
-.link {
-    color:black;
+.sunset {
+    background-color: #0a1d37;
+    color: #ffeedb;
 }
 
-.link-white {
-    color:white;
+.new {
+    background-color: #293B5F;
+    color: #FFC074;
 }
