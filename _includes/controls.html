@@ -3,19 +3,20 @@
       <i class="far fa-moon fa-lg zoom" onclick="darkMode();"></i>
       <i class="fas fa-palette fa-lg zoom" onclick="changeTheme();"></i>
       <i class="fas fa-user-astronaut fa-lg zoom" onclick="saveFavorite();"></i>
+      <i class="fas fa-sync-alt fa-lg zoom" onclick="reload();"></i>
+      <br><br>
       <select name="theme-control" id="theme-control">
         {% for theme in site.data.themes %}
         <option value="{{theme.name}}">{{theme.name}}</option>
         {% endfor %}
       </select>
-      <br>
-      <small>
+      {% comment %} <small>
       {% for theme in site.data.themes%}
       <span id="hover zoom {{theme.name}}" onmouseover="hoverTheme('{{theme.name}}');">{{theme.name}}</span>
       {% endfor %}
-      {% comment %} <br>
-      theme: <span id="theme">light</span> {% endcomment %}
-      </small>
+      <br>
+      theme: <span id="theme">light</span>
+      </small> {% endcomment %}
     </p>
   </div>
 

@@ -29,16 +29,15 @@ function darkMode() {
 function saveFavorite() {
     var favScheme = document.getElementById('theme-control').value
     localStorage.setItem('favTheme', favScheme);
-    console.log('[DEBUG] favtheme added to localstorage: ' + favScheme);
-    document.getElementById('theme').innerHTML = favScheme;
     document.body.classList.toggle(favScheme);
+    console.log('[DEBUG] favtheme added to localstorage: ' + favScheme);
 }
 
 
 function checkFav() {
     const savedTheme = localStorage.getItem('favTheme');
 
-    if (favTheme){
+    if (savedTheme){
     document.body.classList.toggle(savedTheme);    
     console.log('[DEBUG] theme changed To',savedTheme);
     document.getElementById('theme').innerHTML = savedTheme;
@@ -57,3 +56,8 @@ function hoverTheme(opt) {
     document.getElementById(foo).style.fontWeight = "bold";
 
 }
+
+function reload(){
+    location.reload();
+}
+
