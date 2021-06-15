@@ -17,7 +17,7 @@ jek is a minimalist jekyll theme putting the power of custom color schemes in th
 *like the ascii art? make your's at [patorjk](https://patorjk.com/software/taag) or [fsymbols](https://fsymbols.com/text-art/)*
 ### ⚡ features
 
-+  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom" onclick="changeTheme('dark');"></i>
++  [x] toggle dark/light mode by clicking <i class="far fa-moon zoom" onclick="darkMode();"></i>
 +  [x] change entire theme by clicking  <i class="fas fa-palette zoom" onclick="changeTheme();"></i>
 +  [x] add a new color scheme in 2 simple steps
 
