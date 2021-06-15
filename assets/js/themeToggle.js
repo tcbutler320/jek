@@ -1,9 +1,16 @@
-function changeTheme() {
-    var randomItem = themes[Math.floor(Math.random()*themes.length)];
+let i = 0;
 
-    document.body.classList.toggle(randomItem);    
-    console.log('[DEBUG] theme changed To',randomItem);
-    document.getElementById('theme').innerHTML = randomItem;
+function changeTheme() {
+    theme = themes[i];
+    if (i < themes.length){
+        console.log('[DEBUG] theme changed To',theme);
+        console.log('[DEBUG] i =' + i);
+        document.body.classList.toggle(theme); 
+        i++;
+    } else {
+        i = 0;
+        document.body.classList.toggle(theme); 
+    }
 }
 
 function darkMode() {

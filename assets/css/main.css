@@ -15,7 +15,7 @@ a {
 }
 
 img {
-    width: 85%;
+    width: 100%;
 }
 
 @media only screen 
@@ -28,10 +28,7 @@ and (max-device-width : 767px) {
     .center {
         margin: auto;
         width: 90%;
-        padding: 10px;
-        margin-top: 10px;
       } 
-
 
       .nav {
         margin-right: 10px;
@@ -48,8 +45,6 @@ and (min-device-width : 768px) {
     .center {
         margin: auto;
         width: 60%;
-        padding: 10px;
-        margin-top: 20px;
     } 
 
     .nav {
