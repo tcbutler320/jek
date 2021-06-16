@@ -12,7 +12,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys)
 
 
-> Jek is a minimalist jekyll theme putting the power of themes in the user's hands. Toggle between themes hassle-free, create new one's on the go, and store settings for future use.  
+> Jek is a minimalist jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new one's on the go, and store settings for future use.  
 
 #### Index
 +  [features](#-features)  
