@@ -17,16 +17,8 @@
   <script>
   window.addEventListener('load', (event) => {
         console.log('[DEBUG] page is fully loaded');
-        console.log('[DEBUG] setting session storage theme to light');
-        sessionStorage.setItem('theme', 'light');
-        const favTheme = localStorage.getItem('favTheme');
-
-        if (favTheme){
-        document.body.classList.toggle(favTheme);    
-        console.log('[DEBUG] theme changed To',favTheme);
-        } else {
-            console.log('[DEBUG] no theme saved');
-        }
+        console.log('[DEBUG] checking storage options');
+        checkStorage();
       });
   </script>
 </head>

@@ -1,0 +1,24 @@
+<!-- TEST SIDEBAR SECTION-->
+<div class="stickyshare d-none d-lg-block">
+    <div class="rotate">
+        <span class="share-text" style="border-bottom:0;"><span class="nrshares"></span> <span class="sharetext">Share</span></span>
+    </div>
+
+    <a href="https://facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}" target="_blank" rel="noopener" aria-label="Facebook">
+    <div data-network="facebook" class="st-custom-button st-hide-label"><img title="Share on Facebook" width="20" src="https://bootstrapstarter.com/assets/img/icons/fb.svg"></div>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet/?text={{ page.title}} by @{{site.twitter}}&amp;url={{ site.url}}{{ page.url}}" target="_blank" rel="noopener" aria-label="Twitter">
+    <div data-network="twitter" class="st-custom-button st-hide-label"><img title="Tweet this" width="20" src="https://bootstrapstarter.com/assets/img/icons/twitter.svg"></div>
+    </a>
+
+    <a href="https://reddit.com/submit/?url={{ site.url}}{{ page.url}}&amp;resubmit=true&amp;title={{ page.title }}" target="_blank" rel="noopener" aria-label="Reddit">
+    <div data-network="reddit" class="st-custom-button st-hide-label"><img title="Share on Reddit" width="20" src="https://bootstrapstarter.com/assets/img/icons/reddit.svg"></div>
+    </a>
+
+    <a href="mailto:?subject={{ page.title }}&amp;body={{ site.url}}{{ page.url}}" target="_self" rel="noopener" aria-label="E-Mail">
+    <div data-network="email" class="st-custom-button st-hide-label"><img title="E-mail this" width="20" src="https://bootstrapstarter.com/assets/img/icons/email.svg"></div>
+    </a>
+</div>
+
+<!-- END TEST SIDEBAR SECTION-->

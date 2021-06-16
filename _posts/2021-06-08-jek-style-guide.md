@@ -1,19 +1,21 @@
 ---
 layout: post
-title:  "jek style guide"
+title:  "Jek Style Guide"
 date:   2021-06-08 09:34:43 -0400
 categories: jekyll update
-author: Tyler
+author: Tyler Butler
 ---  
 
 ```text
-░░░░░██╗███████╗██╗░░██╗
-░░░░░██║██╔════╝██║░██╔╝
-░░░░░██║█████╗░░█████═╝░
-██╗░░██║██╔══╝░░██╔═██╗░
-╚█████╔╝███████╗██║░╚██╗
-░╚════╝░╚══════╝╚═╝░░╚═╝
-```
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░
+░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░
+░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░
+░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░░░░░
+░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░
+░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░
+░░░░░░░░░░░░░ Jek Style Guide ░░░░░░░░
+```  
 
 The jek style guide shows how markdown elements are rendered on the final page. Use the following guide to help format your blog posts and about me page. 
 
