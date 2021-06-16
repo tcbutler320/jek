@@ -9,6 +9,9 @@
 ░░░░░░░░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░░░░
 ``` 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys)
+
+
 jek is a minimalist jekyll theme putting the power of custom color schemes in the user's hands. toggle between schemes hassle-free, or create new one's in just 2 steps.
 
 ### ⚡ features

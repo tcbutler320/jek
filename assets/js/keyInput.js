@@ -1,10 +1,10 @@
 document.addEventListener('keydown', (event) => {
     var name = event.key;
     var code = event.code;
-    // Alert the key name and key code on keydown
-    document.getElementById('input-selection').innerHTML = name;
 
-    // if (code = 'Shift') {
-    //     changeTheme();
-    // }
+
+    /* use https://keycode.info/ */
+    if (code = 'Escape') {
+      modal.style.display = "block";
+    }
   }, false);

@@ -3,16 +3,23 @@
 {% include head.html %}
 <body>
   {% include controls.html %}
+  {% include sidebar.html %}
+
   <div class="center">
     <div>
       <p style="font-size: 20px;">
         <a href="/">home</a> / <a href="/blog">blog</a> / {{page.title}}
       </p>
-      <p>
-        <i>{{page.date | date: '%B %d %Y'}}</i>, {{page.author}}
+      <p style="text-align:left;">
+        <i>by {{page.author}}, {{page.date | date: '%B %d %Y'}}</i>
+        <span style="float:right;">
+            share
+            {% include socials.html %}
+        </span>
       </p>
     <div>
     {{ content }}
   </div>
+  {% include footer.html %}
 </body>
 </html>

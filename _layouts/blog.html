@@ -8,13 +8,23 @@
       <p style="font-size: 20px;"><a href="/">home</a> / blog /</p>
     <div>
     {% for post in site.posts%}
+    <div style="line-height:14px;height:14px; border-bottom:2px dotted;">
       <p style="text-align:left;">
         <a href="{{post.url}}">{{post.title}}</a>
         <span style="float:right;">
-            ~ {{post.date|date:'%B %d, %Y'}}
+            {{post.date|date:'%B %d, %Y'}}
         </span>
-    </p>
+      </p>
+    </div>
     {% endfor %}
   </div>
+  <footer style="position:fixed;bottom:5px;">
+    <p style="text-align:left;">
+    Made by Tyler Butler  &nbsp;&nbsp;&nbsp;
+    <span style="float:right;">
+      {% include socials.html %}
+    </span>
+    </p>
+  </footer>
 </body>
 </html>
