@@ -1,6 +1,5 @@
 
 ```text
-<<<<<<< HEAD
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░
 ░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░
@@ -64,28 +63,6 @@ gem "jek"
 
 `bundle install`
 
-=======
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░░░░░░░░░░░░░░░░░░░
-``` 
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys)
-
-
-> Jek is a minimalist jekyll theme putting the power of themes in the user's hands. Toggle between themes hassle-free, create new one's on the go, and store settings for future use.  
-
-#### Index
-+  [features](#-features)  
-+  [roadmap](#-roadmap)  
-+  [about themes](#-all-about-the-theme)   
-+  [add new themes](#-add-new-themes)  
-+  [themes](#-default-themes)  
->>>>>>> 2871f66dff457c4f0bbc0f2af6223823adc9a704
 ### ⚡ Features  
 
 *Client Side Themes*  
