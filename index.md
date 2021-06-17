@@ -1,6 +1,6 @@
 ---
 layout: home
----
+---  
 
 ```text
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -12,12 +12,14 @@ layout: home
 ░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░
 ░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░
 ```  
-Jek is a minimalist jekyll theme putting the power of themes in the user's hands. Toggle between themes hassle-free, create new one's on the go, and store settings for future use.  
+
+
+Jek is a minimalist jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new one's on the go, and store settings in-browser.  
 ### ⚡ Features  
 
-+  [x] toggle between dark/light mode by clicking <i class="far fa-moon zoom"></i>
-+  [x] choose a random theme by clicking  <i class="fas fa-palette zoom"></i>
-+  [x] save current theme by clicking  <i class="fas fa-user-astronaut zoom"></i>
++  [x] click <i class="far fa-moon zoom"></i> to toggle light/dark
++  [x] click <i class="fas fa-palette zoom"></i> to choose random pallet
++  [x] click <i class="fas fa-user-astronaut zoom"></i> to save settings
 
 ### 💡 All About The Theme 
 

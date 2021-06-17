@@ -2,20 +2,15 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include controls.html %}
   {% include sidebar.html %}
-
   <div class="center">
     <div>
+      {% include controls.html %}
       <p style="font-size: 20px;">
-        <a href="/">home</a> / <a href="/blog">blog</a> / {{page.title}}
+        <a href="/">Home</a> / <a href="/blog">Blog</a> / {{page.title}}
       </p>
       <p style="text-align:left;">
-        <i>by {{page.author}}, {{page.date | date: '%B %d %Y'}}</i>
-        <span style="float:right;">
-            share
-            {% include socials.html %}
-        </span>
+        <i>{{page.author}}, {{page.date | date: '%B %d %Y'}}</i>
       </p>
     <div>
     {{ content }}

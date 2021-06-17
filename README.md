@@ -1,5 +1,70 @@
 
 ```text
+<<<<<<< HEAD
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░
+░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░
+░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░
+░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░░░░░
+░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░
+░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░
+░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░
+```  
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys) [![Gem Version](https://badge.fury.io/rb/jek.svg)](https://badge.fury.io/rb/jek)
+
+
+
+
+> Jek is a minimalist jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new one's on the go, and store settings in-browser.  
+
+### 🛠️ Installation  
+
+To install Jek, you can use the [ruby gem](https://rubygems.org/gems/jek) or clone the [github repository](https://github.com/tcbutler320/jek). It's currently recommended to install from git clone as several kinks in the gem are being worked out.
+
+**Install from Github**   
+1) Clone the jek repository 
+
+`git clone https://github.com/tcbutler320/jek`  
+
+2) CD into project and run bundler
+
+`cd jek && bundle install`
+
+3) Launch jekyll developent server
+
+`bundle exec jekyll serve`
+
+
+**Install from Gem** 
+
+1) Create a new jekyll project
+
+`jekyll new myJekTheme`
+
+2) Change default `minima` theme to `jek`  
+   
+```text
+# Build settings
+theme: jek
+```  
+
+
+3) Change `gemfile` to the following 
+
+```text
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "jekyll-feed"
+gem "jek"
+```  
+
+4) Install gem 
+
+`bundle install`
+
+=======
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -20,6 +85,7 @@
 +  [about themes](#-all-about-the-theme)   
 +  [add new themes](#-add-new-themes)  
 +  [themes](#-default-themes)  
+>>>>>>> 2871f66dff457c4f0bbc0f2af6223823adc9a704
 ### ⚡ Features  
 
 *Client Side Themes*  
