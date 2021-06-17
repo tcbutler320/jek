@@ -2,15 +2,15 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include controls.html %}
   <div class="center">
     <div>
-      <p style="font-size: 20px;"><a href="/">home</a> / blog /</p>
+      {% include controls.html %}
+      <p style="font-size: 20px;"><a href="/">Home</a> / Blog /</p>
     <div>
     {% for post in site.posts%}
     <div style="line-height:14px;height:14px; border-bottom:2px dotted;">
       <p style="text-align:left;">
-        <a href="{{post.url}}">{{post.title}}</a>
+        <a href="{{post.url}}" style="text-decoration: none;">{{post.title}}</a>
         <span style="float:right;">
             {{post.date|date:'%B %d, %Y'}}
         </span>
@@ -20,7 +20,7 @@
   </div>
   <footer style="position:fixed;bottom:5px;">
     <p style="text-align:left;">
-    Made by Tyler Butler  &nbsp;&nbsp;&nbsp;
+    Developed by Tyler Butler  &nbsp;&nbsp;&nbsp;
     <span style="float:right;">
       {% include socials.html %}
     </span>

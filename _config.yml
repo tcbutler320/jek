@@ -16,6 +16,9 @@ linkedin: tyler-b-a700a1aa
 edit-date: false # show the date of last edit on pages
 default-theme: light # pick which theme loads by default
 
+# post settings 
+
+tags: foo bar
 # development settings 
 
 developer-controls: false # show developer specefic tips

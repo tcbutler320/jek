@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "test"
-  spec.version       = "0.1.0"
+  spec.name          = "jek"
+  spec.version       = "0.0.2"
   spec.authors       = ["tcbutler320"]
   spec.email         = ["tcbutler320@gmail.com"]
 
-  spec.summary       = "Write a short summary, because Rubygems requires one."
-  spec.homepage      = "https://netlify-evermap.app"
+  spec.summary       = "Jek is a minimalist jekyll theme putting the power of color schemes in the user’s hands"
+  spec.homepage      = "https://jekyll-jek.netlify.app/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }

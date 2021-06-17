@@ -2,7 +2,7 @@
 layout: post
 title:  "Jek Style Guide"
 date:   2021-06-08 09:34:43 -0400
-categories: jekyll update
+categories: foo
 author: Tyler Butler
 ---  
 
@@ -89,3 +89,12 @@ function foo() {
     console.log(bar);
 }
 ```
+
+# blockquote 
+
+<pre>
+> foo bar foo bar
+</pre>
+
+
+> foo bar foo bar
