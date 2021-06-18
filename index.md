@@ -2,6 +2,8 @@
 layout: home
 ---  
 
+
+
 ```text
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░
@@ -11,16 +13,14 @@ layout: home
 ░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░
 ░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░
 ░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░
-```  
-
+```    
 
 Jek is a minimalist jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new one's on the go, and store settings in-browser.  
 ### ⚡ Features  
-
 + [x] toggle light/dark with <i class="far fa-moon zoom" onclick="darkMode();"></i>
 + [x] choose random theme with <i class="fas fa-palette zoom" onclick="changeTheme();"></i>
 + [x] save current theme for next visit with <i class="fas fa-user-astronaut zoom" onclick="saveFavorite();"></i>
-+ [x] open/close settings with <i class="fas fa-cogs zoom" onclick="toggleSettings();"></i>, or press `escape` key
++ [x] open/close settings with <i class="fas fa-cogs zoom" onclick="toggleSettings();"></i>, or press escape key
 + [x] clear settings with <i class="fas fa-sign-out-alt zoom" onclick="clearSettings();"></i>
  
 
@@ -41,10 +41,10 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 ### 👩‍🚀 Add New Themes  
 
-Adding new themes to your new `jek` site could not be easier, just pick a background color and text color and add them to `main.css`. Once your done, add your theme to `_data/themes.yaml`. Check out [colorhunt](https://colorhunt.co/) for inspiration.
+Adding new themes to your new jek site could not be easier, just pick a background color and text color and add them to main.css. Once your done, add your theme to _data/themes.yaml. Check out [colorhunt](https://colorhunt.co/) for inspiration.
 
 
-1) add a new scheme to main.css with a `background-color` and `color`.  
+1) add a new scheme to main.css with a background-color and color.  
 
 ```
 .mytheme {

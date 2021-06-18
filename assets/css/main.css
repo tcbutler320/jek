@@ -187,10 +187,16 @@ and (min-device-width : 768px) {
 }
 
 
+code{
+    display: block;
+    overflow-x: auto;
+}
+
 table{
     border-collapse: collapse;
     border-spacing: 0;
-    border:1px solid black;
+    display: block;
+    overflow-x: auto;
 }
 
 th{
