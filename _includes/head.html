@@ -1,11 +1,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
-  <script src="/assets/js/themeToggle.js"></script>
-  <script src="/assets/js/toolTip.js"></script>
-  <script src="/assets/js/keyInput.js"></script>
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
@@ -13,33 +11,44 @@
   <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <title>jek, a jekyll theme</title>
+
+  <link rel="stylesheet" href="{% link /assets/css/main.css %}">
+ 
+  <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+  
+  <script src="{% link /assets/js/themeToggle.js %}"></script>
+  <script src="{% link /assets/js/toolTip.js %}"></script>
+  <script src="{% /assets/js/keyInput.js %}"></script>
 
   <script>
-  window.addEventListener('load', (event) => {
-        console.log('[DEBUG] page loaded, checking storage');
+      window.addEventListener('load', (event) => {
+        console.debug('[DEBUG] page loaded, checking storage');
         checkStorage();
+
         if (localStorage.theme){
           document.getElementById('settingtbl-theme').innerHTML = localStorage.theme;
-        } else if (sessionStorge.theme){
+        } else if (sessionStorage.theme){
           document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
         }
+
         if (localStorage.theme){
           document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.theme;
         }
         else if (sessionStorage.theme){
           document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
         } else {
-            document.getElementById('whatHappened').innerHTML = 'theme: light';
+          document.getElementById('whatHappened').innerHTML = 'theme: light';
         }
       });
   </script>
+
   <script>
-  function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
   </script>
 </head>
