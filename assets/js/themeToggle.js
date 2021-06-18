@@ -1,55 +1,55 @@
-let i = 0;
+var i = 3;
 
 function changeTheme() {
     theme = themes[i];
-    let sessTheme = sessionStorage.getItem('theme');
     if (i < themes.length) {
-        if (sessTheme) {
-            sessionStorage.removeItem('theme');
-            sessionStorage.setItem('theme', theme);
-            i++;
-            sessionStorage.setItem('theme', theme);
-            i++;
-        }
-        checkStorage();
+        sessionStorage.theme = theme;
+        console.log('[DEBUG changeTheme] random theme changed to: ' + theme);
+        document.body.classList.toggle(sessionStorage.theme);
+        document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+        document.getElementById('settingtbl-theme').innerHTML = 'theme: ' + sessionStorage.theme;
+        i++;
     } else {
-        i = 0;
+        i = 3;
+        console.log('[DEBUG changeTheme] random theme changed to: ' + theme);
+        document.body.classList.toggle(sessionStorage.theme);
+        document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+        document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
+
     }
 }
 
 function darkMode() {
-    console.log('[DEBUG]{darkmode} user clicked darkMode toggles');
-    var sessTheme = sessionStorage.getItem('theme');
-    console.log('[DEBUG]{darkmode} sessionStorage value: ' + sessTheme);
-    if (sessTheme == 'light') {
-        console.log('[DEBUG]{darkmode} added dark to session storage');
-        sessionStorage.removeItem('theme');
-        sessionStorage.setItem('theme', 'dark');
-    } else if (sessTheme == 'dark') {
-        console.log('[DEBUG]{darkmode} added light to session storage');
-        sessionStorage.removeItem('theme');
-        sessionStorage.setItem('theme', 'light');
-    } else if (sessTheme === null) {
-        console.log('[DEBUG]{darkmode} null, added light to session storage');
-        sessionStorage.removeItem('theme');
-        sessionStorage.setItem('theme', 'dark');
+    console.log('[DEBUG darkMode] user clicked darkMode');
+    if (sessionStorage.theme == 'light') {
+        console.log('[DEBUG] setting sessionStorage.theme to dark');
+        sessionStorage.theme = 'dark';
+        document.body.classList.toggle(sessionStorage.theme);
+        location.reload();
+    } else if (sessionStorage.theme == 'dark') {
+        console.log('[DEBUG] setting sessionStorage.theme to light');
+        sessionStorage.theme = 'light';
+        document.body.classList.toggle(sessionStorage.theme);
+        location.reload();
+    } else {
+        console.log('[DEBUG] null, added light to session storage');
+        sessionStorage.theme = 'light';
+        document.body.classList.toggle(sessionStorage.theme);
     }
-    checkStorage();
+}
+
+
+function clearSettings() {
+    sessionStorage.clear();
+    localStorage.clear();
+    console.log('[DEBUG] settings cleared');
+    document.getElementById('whatHappened').innerHTML = 'settings cleared';
+    location.reload();
 }
 
 function saveFavorite() {
-    let locTheme = localStorage.getItem('theme');
-    let sessTheme = sessionStorage.getItem('theme');
-    if ((sessTheme) && !(locTheme)) {
-        localStorage.setItem('theme', sessTheme );
-        console.log('setting favorite theme');
-    } else if ((sessTheme) && (locTheme)) {
-        console.log('remove old favorite theme');
-        console.log('setting favorite theme');
-        sessionStorage.removeItem('theme');
-        localStorage.setItem('theme', sessTheme );
-    }
-    checkStorage();
+    localStorage.theme = sessionStorage.theme;
+    document.body.classList.toggle(localStorage.theme);  
 }
 
 
@@ -72,10 +72,6 @@ function hoverTheme(opt) {
     var foo = str1.concat(str2);
     document.getElementById(foo).style.fontWeight = "bold";
 
-}
-
-function reload(){
-    location.reload();
 }
 
 /* set custom themes using session storage */
@@ -123,27 +119,38 @@ function setCustomTheme() {
 }
 
 function checkStorage(){
-    console.log('[DEBUG] now in checkStorage');
-
-    let locTheme = localStorage.getItem('theme');
-    let customTheme = localStorage.getItem('customTheme');
-    let sessTheme = sessionStorage.getItem('theme');
-
-    if (customTheme) {
-        document.body.classList.toggle(customTheme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + customTheme;
-        console.log('[DEBUG] custom theme set');
-    } else if (locTheme) {
-        document.body.classList.toggle(locTheme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + locTheme;
-        console.log('[DEBUG] local theme set: ' + locTheme);
-    } else if (sessTheme) {
-        document.body.classList.toggle(sessTheme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + sessTheme;
-        console.log('[DEBUG] session theme set: ' + sessTheme);
-    } else {
-        document.body.classList.toggle('light');
-        document.getElementById('whatHappened').innerHTML = 'theme: light';
-        console.log('[DEBUG] no theme set: going light');
+    console.log('[DEBUG checkStorage] starting checkStorage()');
+    if (localStorage.customTheme) {
+        document.body.classList.toggle(localStorage.customTheme);
+        document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.customTheme;
+        console.log('[DEBUG checkStorage] custom theme set');
+    } else if (localStorage.theme) {
+        document.body.classList.toggle(localStorage.theme);
+        document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.theme;
+        console.log('[DEBUG checkStorage] local theme set: ' + localStorage.theme);
+    } else if (sessionStorage.theme) {
+        document.body.classList.toggle(sessionStorage.theme);
+        document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+        console.log('[DEBUG checkStorage] session theme set: ' + sessionStorage.theme);
     }
+}
+
+function settings() {
+    console.log('[DEBUG][settings] user opened settings');
+}
+
+function toggleSettings() {
+    var x = document.getElementById("myTable");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+function setSpeceficPallet(foo){
+    sessionStorage.theme = foo;
+    console.log('[DEBUG] setting sessionStorage.theme to: ' + foo);
+    document.body.classList.toggle(sessionStorage.theme);
 }

@@ -5,6 +5,6 @@ document.addEventListener('keydown', (event) => {
 
     /* use https://keycode.info/ */
     if (code = 'Escape') {
-      modal.style.display = "block";
-    }
+      toggleSettings();
+    } 
   }, false);
