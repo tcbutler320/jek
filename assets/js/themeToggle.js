@@ -32,8 +32,8 @@ function darkMode() {
         document.body.classList.toggle(sessionStorage.theme);
         location.reload();
     } else {
-        console.log('[DEBUG] null, added light to session storage');
-        sessionStorage.theme = 'light';
+        console.log('[DEBUG] null, added dark to session storage');
+        sessionStorage.theme = 'dark';
         document.body.classList.toggle(sessionStorage.theme);
     }
 }
