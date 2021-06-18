@@ -10,11 +10,17 @@
 ░░░░░░░░░░░░░ by Tyler Butler ░░░░░░░░
 ```    
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys) [![Gem Version](https://badge.fury.io/rb/jek.svg)](https://badge.fury.io/rb/jek)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys)
+[![Gem Version](https://badge.fury.io/rb/jek.svg)](https://badge.fury.io/rb/jek)
+[![Made with Jekyll](https://img.shields.io/badge/jekyll-4-blue?logo=jekyll)](https://jekyllrb.com)
+
 
 Jek is a minimalist Jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new ones on the go, and store settings in-browser.  
 
-Check out the [Demo site](https://jekyll-jek.netlify.app/).
+Check out the [Demo site](https://jekyll-jek.netlify.app/), deployed and hosted on [Netlify](https://www.netlify.com/).
+
+_Warning - this theme requires Jekyll 4 and so will **not** work on GitHub Pages (with Jekyll 3), unless you add a custom CI flow using GitHub Actions._
+
 
 ## ⚡ Features
 
