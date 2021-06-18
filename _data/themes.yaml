@@ -12,3 +12,24 @@
 
 - name: sunset
   enabled: true
+
+- name: sandcastle
+  enabled: true
+
+- name: greenturtle
+  enabled: true
+
+- name: dunes
+  enabled: true
+
+- name: arctic
+  enabled: true
+
+- name: marsian
+  enabled: true
+
+- name: bumble
+  enabled: true
+
+- name: pinkapple
+  enabled: true

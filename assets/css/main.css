@@ -66,9 +66,9 @@ and (min-device-width : 768px) {
 }
 
 /* Theme List */
-light{
+.light{
     color: black;
-    background-color: transparent;
+    background-color: white;
 }
 
 .dark  {
@@ -96,6 +96,41 @@ light{
     color: #FFC074;
 }
 
+.sandcastle {
+    background-color: #F7F3E9;
+    color: black;
+}
+
+.greenturtle {
+    background-color: #314E52;
+    color: #F7F6E7;
+}
+
+.dunes {
+    background-color: #FCF8E8;
+    color: #DF7861;
+    accent: #D4E2D4;
+}
+
+.arctic {
+    background-color: #E8E8E8;
+    color: #495464;
+}
+
+.marsian {
+    background-color: #EBD4D4;
+    color: #463333;
+}
+
+.bumble {
+    background-color: #0A1931;
+    color: #FFC947;
+}
+
+.pinkapple {
+    background-color: #FFBBCC;
+    color: #99154E;
+}
 
 /* The Modal (background) */
 .modal {
@@ -214,4 +249,21 @@ blockquote {
     margin: 0;  
     padding-left: 1.4rem;  
     border-left: 2px solid hotpink; 
+}
+
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 6px;
+    background: hotpink;
+    width: 0%;
+  }
+
+.theme-options {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
