@@ -153,4 +153,12 @@ function setSpeceficPallet(foo){
     sessionStorage.theme = foo;
     console.log('[DEBUG] setting sessionStorage.theme to: ' + foo);
     document.body.classList.toggle(sessionStorage.theme);
+    closeSettings();
+}
+
+function closeSettings() {
+    var x = document.getElementById("myTable");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    }
 }

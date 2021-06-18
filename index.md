@@ -28,10 +28,10 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 ### 🍭 Default Themes 
 
-*Move your mouse over the following sections to try out different themes!*
+*Click the following sections to try out different themes*
 
 {% for themes in site.data.themes %}
-  <div class="theme-options {{themes.name}}" onmouseover="setSpeceficPallet('{{themes.name}}');">
+  <div class="theme-options {{themes.name}}" onclick="setSpeceficPallet('{{themes.name}}');">
     <p class="center">{{themes.name}} ~ Lorem ipsum dolor sit amet</p>
   </div>
 {% endfor %}
