@@ -18,7 +18,7 @@
   
   <script src="{% link /assets/js/themeToggle.js %}"></script>
   <script src="{% link /assets/js/toolTip.js %}"></script>
-  <script src="{% /assets/js/keyInput.js %}"></script>
+  <script src="{% link /assets/js/keyInput.js %}"></script>
 
   <script>
       window.addEventListener('load', (event) => {
@@ -43,12 +43,12 @@
   </script>
 
   <script>
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
 
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
   </script>
 </head>
