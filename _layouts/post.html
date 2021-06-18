@@ -2,6 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
+<div class="sticky-top progress-bar" id="myBar"></div>
   {% include sidebar.html %}
   <div class="center">
     <div>
@@ -16,5 +17,18 @@
     {{ content }}
   </div>
   {% include footer.html %}
+  <script>
+  window.addEventListener('scroll', (event) => {
+    myFunction();
+  });
+  </script>
+  <script>
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
 </body>
 </html>

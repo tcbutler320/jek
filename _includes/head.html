@@ -13,12 +13,33 @@
   <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <title>~ jek ~</title>
+  <title>jek, a jekyll theme</title>
+
   <script>
   window.addEventListener('load', (event) => {
-        console.log('[DEBUG] page is fully loaded');
-        console.log('[DEBUG] checking storage options');
+        console.log('[DEBUG] page loaded, checking storage');
         checkStorage();
+        if (localStorage.theme){
+          document.getElementById('settingtbl-theme').innerHTML = localStorage.theme;
+        } else if (sessionStorge.theme){
+          document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
+        }
+        if (localStorage.theme){
+          document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.theme;
+        }
+        else if (sessionStorage.theme){
+          document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+        } else {
+            document.getElementById('whatHappened').innerHTML = 'theme: light';
+        }
       });
+  </script>
+  <script>
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
   </script>
 </head>
