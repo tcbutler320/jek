@@ -17,13 +17,27 @@ layout: home
 Jek is a minimalist jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new one's on the go, and store settings in-browser.  
 ### ⚡ Features  
 
-+  [x] click <i class="far fa-moon zoom"></i> to toggle light/dark
-+  [x] click <i class="fas fa-palette zoom"></i> to choose random pallet
-+  [x] click <i class="fas fa-user-astronaut zoom"></i> to save settings
++ [x] toggle light/dark with <i class="far fa-moon zoom" onclick="darkMode();"></i>
++ [x] choose random theme with <i class="fas fa-palette zoom" onclick="changeTheme();"></i>
++ [x] save current theme for next visit with <i class="fas fa-user-astronaut zoom" onclick="saveFavorite();"></i>
++ [x] open/close settings with <i class="fas fa-cogs zoom" onclick="toggleSettings();"></i>, or press `escape` key
++ [x] clear settings with <i class="fas fa-sign-out-alt zoom" onclick="clearSettings();"></i>
+ 
 
 ### 💡 All About The Theme 
 
 Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) and [local](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) storage. Toggling light/dark mode or choosing a random pallet saves settings for only the current session. Clicking the save button adds the theme to local storage for future visits. 
+
+### 🍭 Default Themes 
+
+*Move your mouse over the following sections to try out different themes!*
+
+{% for themes in site.data.themes %}
+  <div class="theme-options {{themes.name}}" onmouseover="setSpeceficPallet('{{themes.name}}');">
+    <p class="center">{{themes.name}} ~ Lorem ipsum dolor sit amet</p>
+  </div>
+{% endfor %}
+
 
 ### 👩‍🚀 Add New Themes  
 
@@ -45,17 +59,3 @@ Adding new themes to your new `jek` site could not be easier, just pick a backgr
 - name: mytheme
   enabled: true
 ```
-
-### 🌈 Default Themes
-
-*dark*  
-
-![](/assets/img/readme/preview-dark.png)
-
-*sunset*   
-
-![](/assets/img/readme/preview-sunset.png)
-
-*dragos*  
-
-![](/assets/img/readme/preview-dragos.png)  
