@@ -12,9 +12,11 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d1f745e-c8d9-4732-ab34-06748d61e84d/deploy-status)](https://app.netlify.com/sites/jekyll-jek/deploys) [![Gem Version](https://badge.fury.io/rb/jek.svg)](https://badge.fury.io/rb/jek)
 
-> Jek is a minimalist Jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new ones on the go, and store settings in-browser.  
+Jek is a minimalist Jekyll theme putting the power of color schemes in the user's hands. Toggle between schemes hassle-free, create new ones on the go, and store settings in-browser.  
 
-## ⚡ Features  
+Check out the [Demo site](https://jekyll-jek.netlify.app/).
+
+## ⚡ Features
 
 + [x] toggle light/dark
 + [x] choose random theme 
