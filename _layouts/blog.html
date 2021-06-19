@@ -7,16 +7,30 @@
       {% include controls.html %}
       <p style="font-size: 20px;"><a href="/">Home</a> / Blog /</p>
     <div>
-    {% for post in site.posts%}
-    <div style="line-height:14px;height:14px; border-bottom:2px dotted;">
-      <p style="text-align:left;">
-        <a href="{{post.url}}" style="text-decoration: none;">{{post.title}}</a>
-        <span style="float:right;">
-            {{post.date|date:'%B %d, %Y'}}
-        </span>
-      </p>
-    </div>
-    {% endfor %}
+    <div id="archives">
+      {% for category in site.categories %}
+        <div class="archive-group">
+          {% capture category_name %}{{ category | first }}{% endcapture %}
+          <div id="#{{ category_name | slugize }}"></div>
+          <h3 class="category-head">
+            {{ category_name }}
+          </h3>
+          <a name="{{ category_name | slugize }}"></a>
+          {% for post in site.categories[category_name] %}
+          <article class="archive-item">
+            <div style="line-height:14px;height:14px; border-bottom:2px dotted;">
+                <p style="text-align:left;">
+                  <a style="text-decoration: none;" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+                  <span style="float:right;">
+                      {{post.date|date:'%B %d, %Y'}}
+                  </span>
+                </p>
+              </div>
+          </article>
+          {% endfor %}
+        </div>
+      {% endfor %}
+      </div>
   </div>
   <footer style="position:fixed;bottom:5px;">
     <p style="text-align:left;">

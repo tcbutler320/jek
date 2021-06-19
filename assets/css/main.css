@@ -71,10 +71,33 @@ and (min-device-width : 768px) {
     background-color: white;
 }
 
-.dark  {
+.light blockquote {  
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid black; 
+}
+
+.dark {
     color: white;
     background-color: black;
 }
+
+/* this must be done for certain themes to see table lines */
+.dark th, td {
+    border:1px solid white;
+}
+
+.dark a {
+    color: white;
+}
+
+.dark blockquote {
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid white; 
+}
+
+
 .dragos {
     color:#d2fafb;
     background-color: #2c003e;
@@ -126,6 +149,7 @@ and (min-device-width : 768px) {
     background-color: #0A1931;
     color: #FFC947;
 }
+
 
 .pinkapple {
     background-color: #FFBBCC;
@@ -199,14 +223,6 @@ table{
     overflow-x: auto;
 }
 
-th{
-    border:1px solid black;
-}
-
-td{
-    border:1px solid black;
-}
-
 
 
     .stickyshare {
@@ -247,16 +263,6 @@ td{
 }
 
 
-blockquote {
-   
-}
-
-blockquote {  
-    margin: 0;  
-    padding-left: 1.4rem;  
-    border-left: 2px solid hotpink; 
-}
-
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
@@ -272,4 +278,10 @@ blockquote {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+blockquote {  
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid black; 
 }

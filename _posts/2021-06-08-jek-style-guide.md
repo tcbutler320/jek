@@ -2,7 +2,7 @@
 layout: post
 title:  "Jek Style Guide"
 date:   2021-06-08 09:34:43 -0400
-categories: foo
+categories: "HowTo"
 author: Tyler Butler
 ---  
 
