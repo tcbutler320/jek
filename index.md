@@ -48,14 +48,17 @@ Adding new themes to your new jek site could not be easier, just pick a backgrou
 
 
 1. Add a new scheme to main.css with background-color and color set.  
-    ```css
-    .mytheme {
-      background-color: #0a1d37;
-      color: #ffeedb;
-    }
-    ```  
-2. Add a color scheme name to `_data/themes.yaml`.  
-    ```yaml
-    - name: mytheme
-      enabled: true
-    ```
+  
+  ```css
+  .mytheme {
+    background-color: #0a1d37;
+    color: #ffeedb;
+  }
+  ```  
+
+1. Add a color scheme name to `_data/themes.yaml`.    
+  
+  ```yaml
+  - name: mytheme
+    enabled: true
+  ```
