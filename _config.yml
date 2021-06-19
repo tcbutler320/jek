@@ -14,7 +14,7 @@ linkedin: tyler-b-a700a1aa
 # Theme settings 
 
 edit-date: false # show the date of last edit on pages
-default-theme: light # pick which theme loads by default
+default-theme: sandcastle # pick which theme loads by default
 
 # post settings 
 

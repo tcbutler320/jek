@@ -1,0 +1,10 @@
+<div id="themeTable" style="display: none;">
+    <small>click to enable</small>
+    <table>
+        {% for theme in site.data.themes %}
+        <tr>
+            <td style="text-align: center;" class="zoom {{theme.name}}"onclick="setSpeceficPallet('{{theme.name}}');">{{theme.name}}</td>
+        </tr>
+        {% endfor%}
+    </table>
+</div>
