@@ -38,7 +38,7 @@
         else if (sessionStorage.theme){
           document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
         } else {
-          document.getElementById('whatHappened').innerHTML = 'theme: light';
+          document.getElementById('whatHappened').innerHTML = ' default theme: {{site.default-theme}}';
         }
       });
   </script>

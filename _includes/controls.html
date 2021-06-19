@@ -1,13 +1,15 @@
 <div class="nav">
       <p style="text-align:right;">
           <i class="far fa-moon fa-lg zoom" onclick="darkMode();"></i>
-          <i class="fas fa-palette fa-lg zoom" onclick="changeTheme();"></i>
+          <i class="fas fa-palette fa-lg zoom" onclick="toggleTheme();"></i>
           <i class="fas fa-user-astronaut fa-lg zoom" onclick="saveFavorite();"></i>
           <i class="fas fa-cogs fa-lg zoom" onclick="toggleSettings();"></i>
           <i class="fas fa-sign-out-alt fa-lg zoom" onclick="clearSettings();"></i>
           <br>
           <small><span id="whatHappened"></span></small>
           {% include settings_table.html %}
+          {% include theme_table.html %}
+
       </p>
       <!-- The Modal -->
       <div id="myModal" class="modal">

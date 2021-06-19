@@ -140,13 +140,25 @@ function settings() {
 }
 
 function toggleSettings() {
-    var x = document.getElementById("myTable");
+    var x = document.getElementById("settingTable");
+    if (x.style.display === "none" ) {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function toggleTheme() {
+    var x = document.getElementById("themeTable");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
 }
+
+
+
 
 
 function setSpeceficPallet(foo){
@@ -157,7 +169,7 @@ function setSpeceficPallet(foo){
 }
 
 function closeSettings() {
-    var x = document.getElementById("myTable");
+    var x = document.getElementById("settingTable");
     if (x.style.display === "block") {
         x.style.display = "none";
     }
