@@ -36,7 +36,7 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 
 {% for themes in site.data.themes %}
-<div class="theme-options {{ themes.name }}" onclick="setSpeceficPallet('{{ themes.name }}');">
+<div class="theme-options {{ themes.name }} zoom" onclick="setSpeceficPallet('{{ themes.name }}');">
     <p class="center">{{ themes.name }} ~ Lorem ipsum dolor sit amet</p>
 </div>
 {% endfor %}  

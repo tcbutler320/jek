@@ -156,6 +156,52 @@ and (min-device-width : 768px) {
     color: #99154E;
 }
 
+.dracula {
+  background-color: #171717;
+  color: #DA0037;
+}
+
+.greenpeas {
+  background-color: #FAF1E6;
+  color: #01937C;
+}
+
+.lavender {
+  background-color: #E1E8EB;
+  color: #7952B3;
+}
+
+.limeade {
+  background-color: #DFEEEA;
+  color: #2F5D62;
+}
+
+.anakin {
+  background-color: #F5E6CA;
+  color: #F54748;
+}
+
+.storm {
+  background-color: #444444;
+  color: #EDEDED;
+}
+
+.purpman {
+  background-color: #000000;
+  color: #892CDC;
+}
+
+.clay {
+  background-color: #DBCBBD;
+  color: #290001;
+}
+
+.hallowseve {
+  background-color: #2F2519;
+  color: #FF4301;
+}
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
