@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: tbutler0x90
 github:  tcbutler320
 mail: developer.tbutler@gmail.com
@@ -27,6 +27,10 @@ developer-controls: false # show developer specefic tips
 theme: 
 plugins:
   - jekyll-feed
+
+
+paginate: 5
+
 
 
 

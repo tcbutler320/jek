@@ -25,13 +25,6 @@ Jek is a minimalist jekyll theme putting the power of color schemes in the user'
 - [x] clear settings with <i class="fas fa-sign-out-alt zoom" onclick="clearSettings();"></i>
  
 
-*Click the following sections to try out different themes*
-
-{% for themes in site.data.themes %}
-  <div class="theme-options {{themes.name}}" onclick="setSpeceficPallet('{{themes.name}}');">
-    <p class="center">{{themes.name}} ~ Lorem ipsum dolor sit amet</p>
-  </div>
-{% endfor %}
 ## 💡 All About The Theme 
 
 Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) and [local](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) storage. Toggling light/dark mode or choosing a random palette saves settings for only the current session. Clicking the save button adds the theme to local storage for future visits. 
@@ -39,21 +32,22 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 ## 🍭 Default Themes 
 
-_Hover your mouse over the following sections to try out different themes!_
+*Hover your mouse over the following sections to try out different themes!*  
+
 
 {% for themes in site.data.themes %}
-    <div class="theme-options {{ themes.name }}" onmouseover="setSpeceficPallet('{{ themes.name }}');">
-        <p class="center">{{ themes.name }} ~ Lorem ipsum dolor sit amet</p>
-    </div>
-{% endfor %}
+<div class="theme-options {{ themes.name }}" onclick="setSpeceficPallet('{{ themes.name }}');">
+    <p class="center">{{ themes.name }} ~ Lorem ipsum dolor sit amet</p>
+</div>
+{% endfor %}  
 
 
 ## 👩‍🚀 Add New Themes  
 
-Adding new themes to your new jek site could not be easier, just pick a background color and text color and add them to `main.css`. Once you're done, add your theme to `_data/themes.yaml`. Check out [colorhunt](https://colorhunt.co/) for inspiration.
+Adding new themes to your new jek site could not be easier, just pick a background color and text color and add them to main.css. Once you're done, add your theme to _data/themes.yaml. Check out [colorhunt](https://colorhunt.co/) for inspiration.
 
 
-1. Add a new scheme to `main.css` with `background-color` and `color` set.  
+1. Add a new scheme to main.css with background-color and color set.  
     ```css
     .mytheme {
       background-color: #0a1d37;

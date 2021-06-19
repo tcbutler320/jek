@@ -162,3 +162,8 @@ function closeSettings() {
         x.style.display = "none";
     }
 }
+
+
+function clickToShare() {
+    document.getElementById('clickToShare').innerHTML = "<table><tbody><tr><td style=\"text-align: center;\"><a style=\"color:inherit\" href=\"https://twitter.com/tbutler0x90\"><i class=\"fab fa-twitter zoom\" aria-hidden=\"true\"></i></a></td><td style=\"text-align: center;\"><a style=\"color:inherit\" href=\"https://www.linkedin.com/in/tyler-b-a700a1aa/\"><i class=\"fab fa-linkedin-in zoom\" aria-hidden=\"true\"></i></a></td><td style=\"text-align: center;\"><a style=\"color:inherit\" href=\"mailto:developer.tbutler@gmail.com\"><i class=\"fas fa-envelope zoom\" aria-hidden=\"true\"></i></a></td><td style=\"text-align: center;\"><a style=\"color:inherit\" href=\"https://github.com/tcbutler320\"><i class=\"fab fa-github-alt zoom\" aria-hidden=\"true\"></i></a></td></tr></tbody></table>"
+}

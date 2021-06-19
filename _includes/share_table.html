@@ -1,0 +1,11 @@
+<div id="clickToShare" style="display: block;">
+     {% if site.twitter %}
+    <td style="text-align: center;"><a style="color:inherit" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url | append: page.url }}"><i class="fab fa-twitter zoom"></i></a></td>
+    {% endif %}
+    {% if site.linkedin %}
+    <td style="text-align: center;"><a style="color:inherit" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url | url_encode  }}&title={{ page.title | url_encode }}&summary={{ page.description | url_encode }}&source={{ site.title | url_encode }}"><i class="fab fa-linkedin-in zoom"></i></a></td>
+    {% endif %}
+    {% if site.mail %}
+    <td style="text-align: center;"><a style="color:inherit" href="mailto:{{site.mail}}"><i class="fas fa-envelope zoom"></i></a></td>
+    {% endif %}
+</div>

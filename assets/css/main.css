@@ -71,6 +71,11 @@ and (min-device-width : 768px) {
     background-color: white;
 }
 
+.light blockquote {  
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid black; 
+}
 
 .dark {
     color: white;
@@ -84,6 +89,12 @@ and (min-device-width : 768px) {
 
 .dark a {
     color: white;
+}
+
+.dark blockquote {
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid white; 
 }
 
 
@@ -252,16 +263,6 @@ table{
 }
 
 
-blockquote {
-   
-}
-
-blockquote {  
-    margin: 0;  
-    padding-left: 1.4rem;  
-    border-left: 2px solid hotpink; 
-}
-
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
@@ -277,4 +278,10 @@ blockquote {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+blockquote {  
+    margin: 0;  
+    padding-left: 1.4rem;  
+    border-left: 2px solid black; 
 }

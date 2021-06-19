@@ -11,8 +11,7 @@
         <a href="/">Home</a> / <a href="/blog">Blog</a> / {{page.title}}
       </p>
       <p style="text-align:left;">
-        <i>{{page.author}}, {{page.date | date: '%B %d %Y'}}</i>
-      </p>
+        <i>{{page.author}}, {{page.date | date: '%B %d %Y'}} {% include share_table.html %}</p>
     <div>
     {{ content }}
   </div>
@@ -32,3 +31,4 @@
   </script>
 </body>
 </html>
+
