@@ -36,7 +36,7 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 
 {% for themes in site.data.themes %}
-<div class="theme-options {{ themes.name }}" onclick="setSpeceficPallet('{{ themes.name }}');">
+<div class="theme-options {{ themes.name }} zoom" onclick="setSpeceficPallet('{{ themes.name }}');">
     <p class="center">{{ themes.name }} ~ Lorem ipsum dolor sit amet</p>
 </div>
 {% endfor %}  
@@ -48,14 +48,17 @@ Adding new themes to your new jek site could not be easier, just pick a backgrou
 
 
 1. Add a new scheme to main.css with background-color and color set.  
-    ```css
-    .mytheme {
-      background-color: #0a1d37;
-      color: #ffeedb;
-    }
-    ```  
-2. Add a color scheme name to `_data/themes.yaml`.  
-    ```yaml
-    - name: mytheme
-      enabled: true
-    ```
+  
+  ```css
+  .mytheme {
+    background-color: #0a1d37;
+    color: #ffeedb;
+  }
+  ```  
+
+1. Add a color scheme name to `_data/themes.yaml`.    
+  
+  ```yaml
+  - name: mytheme
+    enabled: true
+  ```

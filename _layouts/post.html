@@ -2,7 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
-<div class="sticky-top progress-bar" id="myBar"></div>
+  <div id="myBar" class="sticky-top progress-bar"></div>
   {% include sidebar.html %}
   <div class="center">
     <div>
@@ -10,8 +10,9 @@
       <p style="font-size: 20px;">
         <a href="/">Home</a> / <a href="/blog">Blog</a> / {{page.title}}
       </p>
+      <small style="opacity: 0.5;">note: jek is currently in alpha release, things will break. When in doubt, click clear settings. If you encounter an bug, create an <a href="https://github.com/tcbutler320/jek/issues">issue</a></small>
       <p style="text-align:left;">
-        <i>{{page.author}}, {{page.date | date: '%B %d %Y'}} {% include share_table.html %}</p>
+        <i>{{page.author}}, {{page.date | date: '%B %d %Y'}} {% include share_table.html %}</i></p>
     <div>
     {{ content }}
   </div>
@@ -28,6 +29,24 @@
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
+  </script>
+  <script>
+    var keys = {};
+window.addEventListener("keydown",
+    function(e){
+        keys[e.keyCode] = true;
+        switch(e.keyCode){
+            case 37: case 39: case 38:  case 40: // Arrow keys
+            case 32: e.preventDefault(); break; // Space
+            default: break; // do not block other keys
+        }
+    },
+false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.keyCode] = false;
+    },
+false);
   </script>
 </body>
 </html>

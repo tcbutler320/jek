@@ -33,3 +33,31 @@
 
 - name: pinkapple
   enabled: true
+
+- name: dracula
+  enabled: true
+
+- name: greenpeas
+  enabled: true
+
+- name: lavender
+  enabled: true
+
+- name: limeade
+  enabled: true
+
+- name: anakin
+  enabled: true
+
+- name: storm
+  enabled: true
+
+- name: purpman
+  enabled: true
+
+- name: clay
+  enabled: true
+
+
+- name: hallowseve
+  enabled: true
