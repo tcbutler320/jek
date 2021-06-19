@@ -71,10 +71,22 @@ and (min-device-width : 768px) {
     background-color: white;
 }
 
-.dark  {
+
+.dark {
     color: white;
     background-color: black;
 }
+
+/* this must be done for certain themes to see table lines */
+.dark th, td {
+    border:1px solid white;
+}
+
+.dark a {
+    color: white;
+}
+
+
 .dragos {
     color:#d2fafb;
     background-color: #2c003e;
@@ -126,6 +138,7 @@ and (min-device-width : 768px) {
     background-color: #0A1931;
     color: #FFC947;
 }
+
 
 .pinkapple {
     background-color: #FFBBCC;
@@ -197,14 +210,6 @@ table{
     border-spacing: 0;
     display: block;
     overflow-x: auto;
-}
-
-th{
-    border:1px solid black;
-}
-
-td{
-    border:1px solid black;
 }
 
 
