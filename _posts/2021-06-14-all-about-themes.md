@@ -7,14 +7,14 @@ author: Tyler Butler
 ---  
 
 ```text
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░
-░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░
-░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░
-░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░░░░░
-░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░
-░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░
-░░░░░░░░░░░░░ All About Themes ░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░██╗███████╗██╗░░██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░██║██╔════╝██║░██╔╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░██║█████╗░░█████═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░██╗░░██║██╔══╝░░██╔═██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░╚█████╔╝███████╗██║░╚██╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░╚════╝░╚══════╝╚═╝░░╚═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░ All About Themes ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```  
 
 # How Jek Themes Work
@@ -35,15 +35,15 @@ function checkStorage(){
     console.log('[DEBUG checkStorage] starting checkStorage()');
     if (localStorage.customTheme) {
         document.body.classList.toggle(localStorage.customTheme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.customTheme;
+        document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.customTheme;
         console.log('[DEBUG checkStorage] custom theme set');
     } else if (localStorage.theme) {
         document.body.classList.toggle(localStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.theme;
+        document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.theme;
         console.log('[DEBUG checkStorage] local theme set: ' + localStorage.theme);
     } else if (sessionStorage.theme) {
         document.body.classList.toggle(sessionStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+        document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
         console.log('[DEBUG checkStorage] session theme set: ' + sessionStorage.theme);
     }
 }

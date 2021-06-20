@@ -1,66 +1,81 @@
-- name: light
+- name: Light
   enabled: true
   
-- name: dark
+- name: Dark
   enabled: true
 
 - name: dragos
   enabled: true
 
-- name: ocean
+- name: Ocean
   enabled: true
 
-- name: sunset
+- name: Sunset
   enabled: true
 
-- name: sandcastle
+- name: Sandcastle
   enabled: true
 
-- name: greenturtle
+- name: Greenturtle
   enabled: true
 
-- name: dunes
+- name: Dunes
   enabled: true
 
-- name: arctic
+- name: Arctic
   enabled: true
 
-- name: marsian
+- name: Marsian
   enabled: true
 
-- name: bumble
+- name: Bumble
   enabled: true
 
-- name: pinkapple
+- name: Pinkapple
   enabled: true
 
-- name: dracula
+- name: Dracula
   enabled: true
 
-- name: greenpeas
+- name: Greenpeas
   enabled: true
 
-- name: lavender
+- name: Lavender
   enabled: true
 
-- name: limeade
+- name: Limeade
   enabled: true
 
-- name: anakin
+- name: Anakin
   enabled: true
 
-- name: storm
+- name: Storm
   enabled: true
 
-- name: purpman
+- name: Purpman
   enabled: true
 
-- name: clay
+- name: Clay
   enabled: true
 
 
-- name: hallowseve
+- name: Hallowseve
   enabled: true
 
-- name: graph
+- name: Sherbert
+  enabled: true
+
+- name: candycane
+  enabled: true
+
+- name: slightred
+  enabled: true
+
+- name: burgerjoint
+  enabled: true
+
+- name: Graph
+  enabled: true
+
+- name: Robot
   enabled: true

@@ -6,9 +6,8 @@
     <div>
       {% include controls.html %}
       <p style="font-size: 20px;">
-        <b>Home</b> / <a href="/blog">Blog</a>
+        {% if page.layout == 'home' %}<b>{% endif %}<a href="/">Home</a>{% if page.layout == 'home' %}</b>{% endif %} / {% if page.layout == 'blog' %}</b>{% endif %} <a href="/blog">Blog</a> {% if page.layout == 'blog' %}</b>{% endif %} {% if site.contact %} {% if page.layout == 'contact' %}<b>{% endif %}  / <a href="/contact">Contact</a>{% if page.layout == 'contact' %}</b>{% endif %} {% endif %}
       </p>
-      <small style="opacity: 0.5;">note: jek is currently in alpha release, things will break. When in doubt, click clear settings. If you encounter an bug, create an <a href="https://github.com/tcbutler320/jek/issues">issue</a></small>
     <div>
     {{ content }}
   </div>
