@@ -1,0 +1,41 @@
+---
+layout: contact
+--- 
+
+<div class="card shadow">
+  <div class="container">
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="mb-3 mt-5">
+        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"/>
+      </div>
+      <div class="mb-3">
+        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage"></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail">
+      </div>
+      <button type="submit" class="btn mb-4">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<script>
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name
+    })
+  }).then(() => navigate("/thank-you/")).catch(error => alert(error))
+}
+</script>

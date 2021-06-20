@@ -33,12 +33,12 @@
         }
 
         if (localStorage.theme){
-          document.getElementById('whatHappened').innerHTML = 'theme: ' + localStorage.theme;
+          document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.theme;
         }
         else if (sessionStorage.theme){
-          document.getElementById('whatHappened').innerHTML = 'theme: ' + sessionStorage.theme;
+          document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
         } else {
-          document.getElementById('whatHappened').innerHTML = ' default theme: {{site.default-theme}}';
+          document.getElementById('whatHappened').innerHTML = ': {{site.default-theme}}';
         }
       });
   </script>
