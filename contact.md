@@ -6,13 +6,13 @@ layout: contact
   <div class="container">
     <form name="contact" method="POST" data-netlify="true">
       <div class="mb-3 mt-5">
-        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"/>
+        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"  />
       </div>
       <div class="mb-3">
-        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage"></textarea>
+        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage" ></textarea>
       </div>
       <div class="mb-3">
-        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail">
+        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail" />
       </div>
       <button type="submit" class="btn mb-4">Submit</button>
     </form>
