@@ -25,13 +25,7 @@
       window.addEventListener('load', (event) => {
         console.debug('[DEBUG] page loaded, checking storage');
         checkStorage();
-
-        if (localStorage.theme){
-          document.getElementById('settingtbl-theme').innerHTML = localStorage.theme;
-        } else if (sessionStorage.theme){
-          document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
-        }
-
+        
         if (localStorage.theme){
           document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.theme;
         }

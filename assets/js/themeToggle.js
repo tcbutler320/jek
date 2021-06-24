@@ -21,20 +21,12 @@ function changeTheme() {
 
 function darkMode() {
     console.log('[DEBUG darkMode] user clicked darkMode');
-    if (sessionStorage.theme == 'light') {
-        console.log('[DEBUG] setting sessionStorage.theme to dark');
-        sessionStorage.theme = 'dark';
-        document.body.classList.toggle(sessionStorage.theme);
-        location.reload();
-    } else if (sessionStorage.theme == 'dark') {
-        console.log('[DEBUG] setting sessionStorage.theme to light');
-        sessionStorage.theme = 'light';
-        document.body.classList.toggle(sessionStorage.theme);
-        location.reload();
+    if (sessionStorage.theme == 'Light') {
+        setSpeceficPallet('Dark');
+    } else if (sessionStorage.theme == 'Dark') {
+        setSpeceficPallet('Light');
     } else {
-        console.log('[DEBUG] null, added dark to session storage');
-        sessionStorage.theme = 'dark';
-        document.body.classList.toggle(sessionStorage.theme);
+        setSpeceficPallet('Light');
     }
 }
 
@@ -166,6 +158,7 @@ function setSpeceficPallet(foo){
     console.log('[DEBUG] setting sessionStorage.theme to: ' + foo);
     document.body.classList.toggle(foo);
     document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+    location.reload();
     closeSettings();
 }
 
