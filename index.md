@@ -32,7 +32,7 @@ Theme settings are saved in [session](https://developer.mozilla.org/en-US/docs/W
 
 ## 🍭 Default Themes 
 
-*Hover your mouse over the following sections to try out different themes!*  
+*Try out the default themes by clicking below*
 
 
 {% for themes in site.data.themes %}

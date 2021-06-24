@@ -4,7 +4,7 @@
 - name: Dark
   enabled: true
 
-- name: dragos
+- name: Dragos
   enabled: true
 
 - name: Ocean
@@ -65,13 +65,13 @@
 - name: Sherbert
   enabled: true
 
-- name: candycane
+- name: Candycane
   enabled: true
 
-- name: slightred
+- name: Slightred
   enabled: true
 
-- name: burgerjoint
+- name: Burgerjoint
   enabled: true
 
 - name: Graph
