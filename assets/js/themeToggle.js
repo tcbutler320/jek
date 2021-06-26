@@ -41,7 +41,12 @@ function clearSettings() {
 
 function saveFavorite() {
     localStorage.theme = sessionStorage.theme;
-    document.body.classList.toggle(localStorage.theme);  
+    sessionStorage.theme = localStorage.theme;
+    console.log('[DEBUG] setting sessionStorage.theme to: ' + localStorage.theme);
+    document.body.classList.toggle(localStorage.theme);
+    document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+    location.reload();
+    closeSettings();
 }
 
 

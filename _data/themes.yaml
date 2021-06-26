@@ -74,6 +74,12 @@
 - name: Burgerjoint
   enabled: true
 
+- name: Banana
+  enabled: true
+
+- name: Vine
+  enabled: true
+
 - name: Graph
   enabled: true
 
