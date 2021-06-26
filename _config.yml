@@ -33,13 +33,6 @@ plugins:
   - jekyll-feed
 
 
-paginate: 5
-
-
-
-
-
-
 markdown: kramdown
 highlighter: rouge
 kramdown:
