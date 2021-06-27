@@ -61,4 +61,12 @@ Adding new themes to your new jek site could not be easier, just pick a backgrou
 ```yaml
 - name: mytheme
   enabled: true
-```
+```  
+
+## ✍️ Contributing  
+
+If you're interested in contributing to Jek, feel free to fork the repository and make a pull request! If you made a cool new theme and want to add it to the defaults, create an issue and add the [*Theme Suggestion*](https://github.com/tcbutler320/jek/labels/Theme%20Suggestion) label.  
+
+## ⚖️ License
+
+Licensed under [MIT](/LICENSE.txt) by [@tcbutler320](https://github.com/tcbutler320).
