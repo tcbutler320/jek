@@ -80,6 +80,12 @@
 - name: Vine
   enabled: true
 
+- name: MintChocolate
+  enabled: true
+
+- name: FrozenBanana
+  enabled: true
+
 - name: Graph
   enabled: true
 
