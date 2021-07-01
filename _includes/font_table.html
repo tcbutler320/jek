@@ -1,0 +1,10 @@
+<div id="fontTable" style="display: none;">
+    <small>scroll for options, click to enable</small>
+    <table>
+        <tr>
+             {% for font in site.data.fonts %}
+            <td style="text-align: center;min-width: 25;" class="zoom {{font.name}}" onclick="setSpeceficFont('{{font.name}}');">{{font.name}}</td>
+            {% endfor%}
+        </tr>
+    </table>
+</div>

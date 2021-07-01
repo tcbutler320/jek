@@ -1,0 +1,28 @@
+- name: Fantasy
+  enabled: true
+
+- name: Impact
+  enabled: true
+
+
+- name: Segoe
+  enabled: true
+
+
+- name: Gill
+  enabled: true
+
+- name: Lucida
+  enabled: true
+
+
+- name: Courier
+  enabled: true
+
+
+- name: Gothic
+  enabled: true
+
+
+- name: Trebuchet
+  enabled: true
