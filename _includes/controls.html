@@ -4,9 +4,15 @@
           <i class="fas fa-palette fa-lg zoom" onclick="toggleTheme();"></i>
           <i class="fas fa-pen-nib fa-lg zoom" onclick="toggleFont();"></i>
           <i class="fas fa-user-astronaut fa-lg zoom" onclick="saveFavorite();"></i>
-          <i class="fas fa-cogs fa-lg zoom" onclick="toggleSettings();"></i>
+          <i class="fas fa-tools fa-lg zoom" onclick="toggleSettings();"></i>
           <i class="fas fa-snowplow fa-lg zoom" onclick="clearSettings();"></i>
-          <span id="whatHappened"></span>
+          <table style="float:right;">
+            <tr>
+              <td style="border: none;font-size: small;">theme</td>
+              <small></small><td id="whatHappened" style="border: none;font-size: small;"></td>
+            </tr>
+          </table>
+ 
           {% include settings_table.html %}
           {% include theme_table.html %}
           {% include font_table.html %}

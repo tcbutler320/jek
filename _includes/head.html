@@ -27,17 +27,17 @@
         checkStorage();
         
         if (localStorage.theme){
-          document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.theme;
+          document.getElementById('whatHappened').innerHTML = localStorage.theme;
         }
         else if (sessionStorage.theme){
-          document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+          document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
         } else {
-          document.getElementById('whatHappened').innerHTML = 'Theme: N/A';
+          document.getElementById('whatHappened').innerHTML = 'n/a';
         }
       });
   </script>
 
-  <script>
+  <!-- <script>
       function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -45,5 +45,5 @@
 
         document.getElementById("myBar").style.width = scrolled + "%";
       }
-  </script>
+  </script> -->
 </head>
