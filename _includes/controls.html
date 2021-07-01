@@ -2,12 +2,15 @@
       <p style="text-align:right;">
           <i class="far fa-moon fa-lg zoom" onclick="darkMode();"></i>
           <i class="fas fa-palette fa-lg zoom" onclick="toggleTheme();"></i>
+          <i class="fas fa-pen-nib fa-lg zoom" onclick="toggleFont();"></i>
           <i class="fas fa-user-astronaut fa-lg zoom" onclick="saveFavorite();"></i>
           <i class="fas fa-cogs fa-lg zoom" onclick="toggleSettings();"></i>
-          <i class="fas fa-sign-out-alt fa-lg zoom" onclick="clearSettings();"></i>
+          <i class="fas fa-snowplow fa-lg zoom" onclick="clearSettings();"></i>
           <span id="whatHappened"></span>
           {% include settings_table.html %}
           {% include theme_table.html %}
+          {% include font_table.html %}
+
       </p>
       <!-- The Modal -->
       <div id="myModal" class="modal">

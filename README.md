@@ -25,7 +25,8 @@ _Warning - this theme requires Jekyll 4 and so will **not** work on GitHub Pages
 ## ⚡ Features
 
 + [x] toggle light/dark
-+ [x] choose random theme 
++ [x] choose custom theme 
++ [x] choose custom font 
 + [x] save current theme for next visit
 + [x] open/close settings
 + [x] clear settings 

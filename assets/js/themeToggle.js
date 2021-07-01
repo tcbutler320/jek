@@ -130,6 +130,11 @@ function checkStorage(){
         document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
         console.log('[DEBUG checkStorage] session theme set: ' + sessionStorage.theme);
     }
+
+    if (sessionStorage.font) {
+        document.body.classList.toggle(sessionStorage.font);
+        console.log('[DEBUG checkStorage] session font set: ' + sessionStorage.font);
+    }
 }
 
 function settings() {
@@ -154,6 +159,14 @@ function toggleTheme() {
     }
 }
 
+function toggleFont() {
+    var x = document.getElementById("fontTable");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 
 
@@ -166,6 +179,16 @@ function setSpeceficPallet(foo){
     location.reload();
     closeSettings();
 }
+
+function setSpeceficFont(foo){
+    sessionStorage.font = foo;
+    console.log('[DEBUG] setting sessionStorage.font to: ' + foo);
+    document.body.classList.toggle(foo);
+    document.getElementById('whatHappened').innerHTML = 'font: ' + sessionStorage.theme;
+    location.reload();
+    closeSettings();
+}
+
 
 function closeSettings() {
     var x = document.getElementById("settingTable");
