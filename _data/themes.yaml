@@ -91,3 +91,9 @@
 
 - name: Robot
   enabled: true
+
+- name: Woods
+  enabled: true
+
+- name: Blossom
+  enabled: true

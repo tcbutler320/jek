@@ -29,7 +29,7 @@ tags: foo bar
 developer-controls: false # show developer specefic tips
 
 # Build settings
-theme: 
+theme: jek
 plugins:
   - jekyll-feed
 

@@ -6,14 +6,14 @@ function changeTheme() {
         sessionStorage.theme = theme;
         console.log('[DEBUG changeTheme] random theme changed to: ' + theme);
         document.body.classList.toggle(sessionStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
-        document.getElementById('settingtbl-theme').innerHTML = 'Theme: ' + sessionStorage.theme;
+        document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
+        document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
         i++;
     } else {
         i = 3;
         console.log('[DEBUG changeTheme] random theme changed to: ' + theme);
         document.body.classList.toggle(sessionStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+        document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
         document.getElementById('settingtbl-theme').innerHTML = sessionStorage.theme;
 
     }
@@ -44,7 +44,7 @@ function saveFavorite() {
     sessionStorage.theme = localStorage.theme;
     console.log('[DEBUG] setting sessionStorage.theme to: ' + localStorage.theme);
     document.body.classList.toggle(localStorage.theme);
-    document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+    document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
     location.reload();
     closeSettings();
 }
@@ -119,15 +119,15 @@ function checkStorage(){
     console.log('[DEBUG checkStorage] starting checkStorage()');
     if (localStorage.customTheme) {
         document.body.classList.toggle(localStorage.customTheme);
-        document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.customTheme;
+        document.getElementById('whatHappened').innerHTML = localStorage.customTheme;
         console.log('[DEBUG checkStorage] custom theme set');
     } else if (localStorage.theme) {
         document.body.classList.toggle(localStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'Theme: ' + localStorage.theme;
+        document.getElementById('whatHappened').innerHTML = localStorage.theme;
         console.log('[DEBUG checkStorage] local theme set: ' + localStorage.theme);
     } else if (sessionStorage.theme) {
         document.body.classList.toggle(sessionStorage.theme);
-        document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+        document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
         console.log('[DEBUG checkStorage] session theme set: ' + sessionStorage.theme);
     }
 
@@ -175,7 +175,7 @@ function setSpeceficPallet(foo){
     sessionStorage.theme = foo;
     console.log('[DEBUG] setting sessionStorage.theme to: ' + foo);
     document.body.classList.toggle(foo);
-    document.getElementById('whatHappened').innerHTML = 'Theme: ' + sessionStorage.theme;
+    document.getElementById('whatHappened').innerHTML = sessionStorage.theme;
     location.reload();
     closeSettings();
 }

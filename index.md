@@ -21,9 +21,9 @@ Jek is a minimalist jekyll theme putting the power of color schemes in the user'
 - [x] choose theme with <i class="fas fa-palette zoom" onclick="toggleTheme();"></i>
 - [x] choose font with <i class="fas fa-pen-nib" onclick="toggleFont();"></i>
 - [x] save current theme for next visit with <i class="fas fa-user-astronaut zoom" onclick="saveFavorite();"></i>
-- [x] open/close settings with <i class="fas fa-cogs zoom" onclick="toggleSettings();"></i>
-- [x] clear settings with <i class="fas fa-snowplow zoom" onclick="clearSettings();"></i>
- 
+- [x] open/close settings with <i class="fas fa-tools zoom" onclick="toggleSettings();"></i>
+- [x] clear settings with <i class="fas fa-snowplow zoom" onclick="clearSettings();"></i>   
+
 
 ## 💡 All About The Theme 
 
@@ -70,8 +70,3 @@ If you're interested in contributing to Jek, feel free to fork the repository an
 ## ⚖️ License
 
 Licensed under [MIT](/LICENSE.txt) by [@tcbutler320](https://github.com/tcbutler320).
-
-
-## Thanks 
-
-Special thanks to [@batfeula](https://twitter.com/batfeula) for the pixel art
